@@ -193,7 +193,7 @@
                     </p>
                     <p>
                         <label for="password">Password:</label>
-                        <input type="text" name="password" id="password" placeholder="Enter Password"  required >
+                        <input type="password" name="password" id="password" placeholder="Enter Password"  required >
                     </p>
                     <p>
                         <label for="phone">Phone number:</label>
@@ -203,9 +203,87 @@
                         <label for="decade">Your Decade number:</label>
                         <input type="number" name="decade" id="decade" value="1990"  min="1950" max="2030" step="10" >
                     </p>
-                    
+                    <p>
+                        <label for="coffee">Fav coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Coffees">
+                                <option value="regular coffee">Regular coffee</option>
+                                <option value="iced coffee">Iced coffee</option>
+                            </optgroup>
+                            <optgroup label="expresso drinks">Excpresso Drinks
+                                <option value="latte" selected>Latte</option>
+                                <option value="capputuno">Cappuccino</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="americano">Americano</option>
+
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+
+                    </p>
+                    <p>
+                        <label for="color">Fav colour</label>
+                        <input type="text" name="colour" id="colour" list="colour-list">
+                        <datalist id="colour-list">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                        </datalist>
+                    </p>
 
                 </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Ur fav food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="burger" value="burger">
+                        <label for="burger">Burger</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="taco" value="taco">
+                        <label for="taco">Taco</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Fav pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pet" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send me feedback</legend>
+                    <label for="feedback">Feedback:</label>
+                    <br>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Feedback here please"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
             </form>
 
 
