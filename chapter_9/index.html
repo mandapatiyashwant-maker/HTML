@@ -22,6 +22,9 @@
             <li>
                 <a href="#vacation">Vacation</a>
             </li>
+            <li>
+                <a href="#form">Form</a>
+            </li>
         </ul>
     </nav>
     
@@ -171,6 +174,41 @@
     </dd>
 </dl>
 </section>
+        </article>
+        <hr>
+        <article id="form">
+            <h2>Fill the form</h2>
+            <p>Please fill the form and give some info</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal info</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter first Name" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter last Name" autocomplete="on" required >
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="text" name="password" id="password" placeholder="Enter Password"  required >
+                    </p>
+                    <p>
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  required >
+                    </p>
+                    <p>
+                        <label for="decade">Your Decade number:</label>
+                        <input type="number" name="decade" id="decade" value="1990"  min="1950" max="2030" step="10" >
+                    </p>
+                    
+
+                </fieldset>
+            </form>
+
+
         </article>
 </main>
 <hr>
